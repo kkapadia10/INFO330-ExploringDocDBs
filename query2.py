@@ -1,3 +1,4 @@
+#Write a query that returns all the Pokemon with an attack greater than 150.
 from pymongo import MongoClient
 
 mongoClient = MongoClient("mongodb://localhost/pokemon")

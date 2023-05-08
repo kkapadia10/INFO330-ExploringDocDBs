@@ -1,3 +1,4 @@
+#Write a query that returns all the Pokemon with an ability of "Overgrow" (1pt)
 from pymongo import MongoClient
 
 mongoClient = MongoClient("mongodb://localhost/pokemon")

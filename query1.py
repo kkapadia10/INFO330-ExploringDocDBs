@@ -1,3 +1,4 @@
+#Write a query that returns all the Pokemon named "Pikachu".
 from pymongo import MongoClient
 
 mongoClient = MongoClient("mongodb://localhost/pokemon")
