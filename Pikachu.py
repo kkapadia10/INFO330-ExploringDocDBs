@@ -6,9 +6,11 @@ pokemonColl = pokemonDB['pokemon_data']
 
 print("\n\nRunning query 1 (pikachu query)\n")
 
-queryPikachu = {"name": "Pikachu"}
-allPikachu = pokemonColl.find(queryPikachu)
-for pokemons in allPikachu:
-    print(pokemons)
+pikachu = {"name": "Pikachu"}
+findPikachu = pokemonColl.find(pikachu)
+for pokemon in findPikachu:
+    print(pokemon)
 
 print("\nFinished running query 1 (pikachu query)\n\n")
+
+mongoClient.close()

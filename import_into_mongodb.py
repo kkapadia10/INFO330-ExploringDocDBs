@@ -41,9 +41,7 @@ for row in pokemon_rows:
 print(pokemon_list)
 
 mongoClient = MongoClient("mongodb://localhost/pokemon")
-
 pokemonDB = mongoClient['pokemondb']
-
 pokemonColl = pokemonDB['pokemon_data']
 
 pokemonColl.insert_many(pokemon_list)
